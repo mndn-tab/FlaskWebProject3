@@ -100,12 +100,14 @@ Frontend Updates Page
 ══════════════ NETWORK / TCP ══════════════
                 │
                 ▼
-┌───────────────────────────────┐
-│           Browser             │
-│                               │
-│  fetch() promise resolves     │
-│  response.json() parses data  │
-└───────────────┬───────────────┘
+┌───────────────────────────────────│ 
+│           Browser                 │
+│                                   │
+│  fetch() promise resolves         │
+│ (Browser receives HTTP response)  │
+│  response.json() parses data      │
+│(Browser coverts JSON to JS Object)│
+└───────────────┬───────────────────│
                 │
                 ▼
 ┌───────────────────────────────┐
