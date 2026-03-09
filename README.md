@@ -24,6 +24,9 @@ Frontend Updates Page
 
 # Visual Pipeline
 
+### important note: 
+### fetch(): browser sends HTTP request to server (https://127.0.0.1:5000/api/message)
+
 ```
 ┌───────────────────────────────┐
 │           Browser             │
@@ -37,7 +40,7 @@ Frontend Updates Page
 ┌───────────────────────────────┐
 │        JavaScript Engine      │
 │                               │
-│  getMessage() runs            │
+│  getMessage() runs            │           
 │  fetch("/api/message")        │
 └───────────────┬───────────────┘
                 │
@@ -188,26 +191,6 @@ JavaScript updates the HTML:
 
 ```javascript
 document.getElementById("output").innerText = data.message;
-```
-
----
-
-# Key Concept
-
-Most modern web applications follow this architecture:
-
-```
-Browser (Frontend)
-        ↓
-API Request
-        ↓
-Backend Server
-        ↓
-Database
-        ↓
-JSON Response
-        ↓
-Frontend Updates UI
 ```
 
 ---
