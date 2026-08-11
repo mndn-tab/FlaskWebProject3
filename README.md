@@ -211,3 +211,11 @@ Frontend and backend communicate using **HTTP requests and responses**.
 * Run business logic
 * Access databases
 * Return responses
+
+# Docker
+### 1.create app.Dockerfile
+### 2. to build image
+``` docker build -f app.Dockerfile -t flaskwebproject3 . ```
+### 3. to run the container 
+``` docker run -d --name  flask-container -p 5000:5000 flaskwebproject3 ```
+
