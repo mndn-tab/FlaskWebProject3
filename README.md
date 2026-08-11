@@ -213,9 +213,19 @@ Frontend and backend communicate using **HTTP requests and responses**.
 * Return responses
 
 # Docker
-### 1.create app.Dockerfile
+### 1.create .Dockerfile
 ### 2. to build image
-``` docker build -f app.Dockerfile -t flaskwebproject3 . ```
+``` docker build -f .Dockerfile -t flaskwebproject3 . ```
+
+check with
+
+``` docker images```
 ### 3. to run the container 
 ``` docker run -d --name  flask-container -p 5000:5000 flaskwebproject3 ```
+
+check with
+
+``` docker ps ```
+
+``` docker logs flask-container```
 
