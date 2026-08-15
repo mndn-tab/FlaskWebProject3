@@ -229,3 +229,17 @@ check with
 
 ``` docker logs flask-container```
 
+# GitHub Docker Registry
+### connect to registery
+``` docker login ghcr.io ```
+
+enter username and password (token)
+
+### build image
+``` docker build -f .Dockerfile  -t ghcr.io/mndn-tab/flaskwebproject3  . ```
+
+### push it on registry
+``` docker push  ghcr.io/mndn-tab/flaskwebproject3  ```
+
+this will publish it on github registry. you can check it here: https://github.com/mndn-tab?tab=packages
+
